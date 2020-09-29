@@ -1,2 +1,5 @@
 # www.yuzonightly.com
-Yuzo's website.
+This is my castle.
+
+# Run local server after installing cargo-watch
+cargo watch -x run

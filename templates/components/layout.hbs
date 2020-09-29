@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{#if is_landing}}
+    {{pagename}}
+    {{else}}
+    {{pagename}} - {{title}}
+    {{/if}}
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="{{assets.css.app}}" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg" href="/static/images/favicon.svg">
+</head>
+
+<body>
+  {{> components/nav}}
+  <main id="main-content">
+    {{~> page}}
+  </main>
+</body>
+
+</html>
